@@ -1,4 +1,4 @@
-sendgrid-smtp-api-worker
+# crosstalk-worker-api-sendgrid-smtp
 ============================
 
 `crosstalk-worker-api-sendgrid-smtp` is a Crosstalk worker for sending emails through the sendgrid rest api
