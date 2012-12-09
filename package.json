@@ -1,0 +1,25 @@
+{
+  "name": "crosstalk-worker-api-sendmail-smtp",
+  "version": "1.0.1",
+  "description": "Crosstalk Worker for the Sendgrid SMTP API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:singlow/crosstalk-worker-api-sendgrid-smtp.git"
+  },
+  "keywords": [
+    "sendgrid",
+    "smtp",
+    "crosstalk",
+    "worker"
+  ],
+  "author": "Jacob Williams <jacob@iakob.com>",
+  "maintainers": [
+    "Jacob Williams <jacob@iakob.com>"
+  ],
+  "crosstalk": {
+    "type": "worker"
+  },
+  "license": "MIT",
+  "private": true
+}
