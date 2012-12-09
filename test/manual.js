@@ -5,18 +5,18 @@ var worker = ide.run( __dirname + "/../index.js", { name : "worker", config : co
 var callback = function (error, response) {
   console.log(error, response);
 }
+
 var data = { 
-  // to: "gospelbass@gmail.com",
+  to: "gospelbass@gmail.com",
   from: "jwilliams@fahrenheitmarketing.com",
   subject: "test message",
   text: "this is a test message"
 }
 
-worker.send(
-  "sendgrid.smtp.send",
-  data,
-  null,
-  callback
-);
+worker.send("sendgrid.smtp.send", {}, null, callback);
 
-worker.shouldCallCallback(callback);
+worker.shouldCallErrorCallback( "sendgrid.smtp.send" );
+
+worker.send("sendgrid.smtp.send", data, null, callback);
+
+worker.shouldCallCallback( "sendgrid.smtp.send" );
