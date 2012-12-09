@@ -19,4 +19,6 @@ worker.shouldCallErrorCallback( "sendgrid.smtp.send" );
 
 worker.send("sendgrid.smtp.send", data, null, callback);
 
+worker.httpRequestFor( "sendgrid.com", "/api/mail.send.json" );
+
 worker.shouldCallCallback( "sendgrid.smtp.send" );
