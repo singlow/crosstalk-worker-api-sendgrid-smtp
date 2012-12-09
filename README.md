@@ -8,7 +8,7 @@ sendgrid-smtp-api-worker
 ```json
 {
   "api_user" : "your sendgrid user name",
-  "api_key" : "your sendgrid password
+  "api_key" : "your sendgrid password"
 }
 ```
 
