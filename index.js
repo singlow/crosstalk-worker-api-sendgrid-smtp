@@ -70,8 +70,11 @@ var send = function send( params, callback ) {
 
     response.on( 'end', function () {
       var json = JSON.parse(body);
-      return json.message == "success" ?
-        callback( null, json ) : callback( json.error );
+      if (json.message == "success") {
+        return callback( null, json )
+      } else {
+        return callback( json.error );
+      }
     });
 
   }); // req.on 'response'
