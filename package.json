@@ -1,6 +1,6 @@
 {
   "name": "crosstalk-worker-api-sendmail-smtp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Crosstalk Worker for the Sendgrid SMTP API",
   "main": "index.js",
   "repository": {
